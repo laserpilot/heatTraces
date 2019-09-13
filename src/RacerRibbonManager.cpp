@@ -91,23 +91,23 @@ void RacerRibbonManager::pickNewColors(){
     ofColor endColor;
     
     if(chosenColor==0){
-        startColor = nikeVoltGreen;
-        endColor = nikePink;
+        startColor = neonGreen;
+        endColor = neonPink;
     }else if(chosenColor==1){
-        startColor = nikePink;
-        endColor = nikeVoltGreen;
+        startColor = neonPink;
+        endColor = neonGreen;
     }else if(chosenColor==2){
-        startColor = nikeOrange;
-        endColor = nikeVoltGreen;
+        startColor = neonOrange;
+        endColor = neonGreen;
     }else if(chosenColor==3){
         startColor = ofColor(255);
-        endColor = nikePink;
+        endColor = neonPink;
     }else if(chosenColor==4){
-        startColor = nikeVoltGreen;
+        startColor = neonGreen;
         endColor = ofColor(255);
     }else{
-        startColor = nikeVoltGreen;
-        endColor = nikePink;
+        startColor = neonGreen;
+        endColor = neonPink;
     }
     
     for(int i=0; i<numRibbons; i++){

@@ -25,8 +25,8 @@ void RacerRibbon::setup(int _length, int _id, int _totalRibbons, int _randomSeed
     totalRibbons = _totalRibbons;
    // startColor = ofColor(206,255,8,255);
    // endColor = ofColor(255,10,129,0);
-    startColor = nikePink;
-    endColor = nikeVoltGreen;
+    startColor = neonPink;
+    endColor = neonGreen;
     
     
     ribbonNoiseCursor = 0.01;
