@@ -49,7 +49,9 @@ class ofApp : public ofBaseApp{
     ofxIntSlider numBlobsToCheck;
      ofxFloatSlider travelSpeed;
          ofxFloatSlider drawScale;
+        ofxIntSlider timeSmoothAmt;
     
+    //TODO: standardize the ofxGui params....
     ofParameter <float> startNoiseAmt;
     ofParameter <float> tailNoiseAmt;
     ofParameter <float> startNoiseAmp;
@@ -68,13 +70,16 @@ class ofApp : public ofBaseApp{
     vector< float > indices; // Segment where is each positions2 (float)
     
     vector <ofVec2f> firstPt;
+    vector <ofVec3f> centroids;
     float numPositions;
+    
+    bool fireOnce;
+    
+
     
     vector < vector <ofVec3f> > prevTracePts;
     float prevLength;
 
-    ofPoint lerped;
-    
     bool bShowDebug;
     vector < vector< float > > lengths;
     
